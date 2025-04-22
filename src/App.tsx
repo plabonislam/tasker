@@ -1,7 +1,11 @@
 import { useState } from "react";
 
+
+
 function App() {
   const [count, setCount] = useState(0);
+
+
 
   return (
     <>
@@ -10,7 +14,9 @@ function App() {
         <button type="button" onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
+     
       </div>
+    
     </>
   );
 }
