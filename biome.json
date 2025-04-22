@@ -23,9 +23,20 @@
     "rules": {
       "recommended": true,
       "correctness": {
-        "noUnusedVariables": {
-          "level": "error",
-          "fix": "none"
+        "noUnusedImports": "error",
+        "noUnusedVariables": "error"
+      },
+	  "nursery": {
+        "useSortedClasses": "error"
+      },
+      "style": {
+        "useConst": {
+          "level": "warn",
+          "fix": "unsafe"
+        },
+        "useTemplate": {
+          "level": "warn",
+          "fix": "safe"
         }
       }
     }
