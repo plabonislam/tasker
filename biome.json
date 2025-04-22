@@ -25,7 +25,7 @@
       "correctness": {
         "noUnusedVariables": {
           "level": "error",
-          "fix": "unsafe"
+          "fix": "none"
         }
       }
     }
