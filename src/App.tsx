@@ -6,7 +6,7 @@ import "./App.css";
 function App() {
   const [count, setCount] = useState(0);
 
-  const red = "red";
+  const _red = "red";
 
   return (
     <>
