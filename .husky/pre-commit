@@ -1,1 +1,1 @@
-npx biome check --apply
+npx biome check --write
