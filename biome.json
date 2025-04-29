@@ -29,9 +29,7 @@
         },
         "noUnusedVariables": "error"
       },
-      "nursery": {
-        "useSortedClasses": "error"
-      },
+
       "style": {
         "useConst": {
           "level": "warn",
