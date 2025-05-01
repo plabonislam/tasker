@@ -15,11 +15,10 @@ function Navbar() {
             <Link href="#" className="text-sm font-medium hover:text-primary">
               Features
             </Link>
-          
+
             <Link href="#" className="text-sm font-medium hover:text-primary">
               Resources
             </Link>
-          
           </nav>
           <div className="flex items-center gap-4">
             <Link

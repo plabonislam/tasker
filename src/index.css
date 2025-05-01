@@ -119,21 +119,18 @@
   }
 }
 
+@layer utilities {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 
-  @layer utilities {
+  @media (min-width: 1536px) {
     .container {
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-      padding-left: 2rem;
-      padding-right: 2rem;
+      max-width: 1400px;
     }
-  
-    @media (min-width: 1536px) {
-      .container {
-        max-width: 1400px;
-      }
-    }
-
+  }
 }
-
