@@ -1,18 +1,16 @@
 import { Button } from "@/components/ui/button";
-import { Calendar } from '@/components/ui/calendar';
-import { useState } from 'react';
+import { Calendar } from "@/components/ui/calendar";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
+import { useState } from "react";
+import Navbar from "./features/Navbar";
 function App() {
-  const [date, setDate] = useState<Date | undefined>(new Date())
   return (
-    <div className="flex flex-col items-center justify-center min-h-svh">
-      <Button>Click me</Button>
-      <Calendar
-      mode="single"
-      selected={date}
-      onSelect={setDate}
-      disabled={(date) => date < new Date()}
-      className="rounded-md border"
-    />
+    <div className="flex min-h-screen flex-col">
+      <Navbar />
     </div>
   );
 }
