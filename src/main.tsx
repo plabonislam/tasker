@@ -11,7 +11,7 @@ if (!rootElement) {
 createRoot(rootElement).render(
   <StrictMode>
     <BrowserRouter>
-    <App />
+      <App />
     </BrowserRouter>
-  </StrictMode>
+  </StrictMode>,
 );
