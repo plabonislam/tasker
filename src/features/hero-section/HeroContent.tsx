@@ -6,12 +6,10 @@ function HeroContent() {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-violet-50 to-background overflow-hidden relative">
       <div className="container px-4 md:px-6 relative">
-        {/* Animated floating elements */}
-
-        <div className="absolute bottom-20 left-[15%] w-6 h-6 bg-green-400 rounded-full opacity-70 animate-float "></div>
-        <div className="absolute top-1 left-[10%] w-10 h-10 bg-primary opacity-20 rounded-full  animate-float"></div>
-        <div className="absolute bottom-20 right-[60%] w-12 h-12 bg-blue-300 opacity-50 rounded-full animate-parallax"></div>
-        <div className="absolute top-20 right-[70%] w-8 h-8 bg-yellow-300 rounded-full opacity-70  animate-parallax"></div>
+        <div className="absolute bottom-20 left-[15%] w-6 h-6 bg-green-400 rounded-full opacity-70 animate-float " />
+        <div className="absolute top-1 left-[10%] w-10 h-10 bg-primary opacity-20 rounded-full  animate-float" />
+        <div className="absolute bottom-20 right-[60%] w-12 h-12 bg-blue-300 opacity-50 rounded-full animate-parallax" />
+        <div className="absolute top-20 right-[70%] w-8 h-8 bg-yellow-300 rounded-full opacity-70  animate-parallax" />
 
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:grid-cols-2">
           <div className="flex flex-col justify-center space-y-4">
@@ -48,7 +46,7 @@ function HeroContent() {
               </div>
             </div>
           </div>
-          <div className="flex items-center justify-center relative"></div>
+          <div className="flex items-center justify-center relative" />
         </div>
       </div>
     </section>
