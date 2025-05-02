@@ -12,18 +12,18 @@ function Navbar() {
             <span className="text-xl font-bold">Taskify</span>
           </div>
           <nav className="hidden md:flex gap-6">
-            <Link href="#" className="text-sm font-medium hover:text-primary">
+            <Link href="#" className="text-base font-medium hover:text-primary">
               Features
             </Link>
 
-            <Link href="#" className="text-sm font-medium hover:text-primary">
+            <Link href="#" className="text-base font-medium hover:text-primary">
               Resources
             </Link>
           </nav>
           <div className="flex items-center gap-4">
             <Link
               href="#"
-              className="text-sm font-medium hover:text-primary hidden md:block"
+              className="text-base font-medium hover:text-primary hidden md:block"
             >
               Sign In
             </Link>
