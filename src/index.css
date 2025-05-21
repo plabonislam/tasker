@@ -142,20 +142,20 @@
   @keyframes float {
     0%,
     100% {
-      transform: translateY(19px);
+      transform: translateY(-38px);
     }
     50% {
-      transform: translateY(40px);
+      transform: translateY(-22px);
     }
   }
 
   @keyframes parallax {
     0%,
     100% {
-      transform: translateX(0);
+      transform: translateX(1);
     }
     50% {
-      transform: translateX(45px);
+      transform: translateX(5px);
     }
   }
 

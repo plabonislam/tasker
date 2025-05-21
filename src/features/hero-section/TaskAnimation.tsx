@@ -1,4 +1,40 @@
 import { ListTodo, Users } from "lucide-react";
+const avatars = [
+  { initials: "JD", bg: "bg-violet-200" },
+  { initials: "TK", bg: "bg-blue-200" },
+  { initials: "MR", bg: "bg-green-200" },
+];
+
+const tasks = [
+  {
+    index: 1,
+    label: "Design homepage",
+    status: "In Progress",
+    dotColor: "bg-yellow-400",
+    statusBg: "bg-yellow-100",
+    statusText: "text-yellow-800",
+    animationDelay: "animate-[slideInRight_0.5s_ease-in-out_0.2s_both]",
+  },
+  {
+    index: 2,
+    label: "Research competitors",
+    status: "Completed",
+    dotColor: "bg-green-400",
+    statusBg: "bg-green-100",
+    statusText: "text-green-800",
+    animationDelay: "animate-[slideInRight_0.5s_ease-in-out_0.4s_both]",
+  },
+  {
+    index: 3,
+    label: "Create wireframes",
+    status: "To Do",
+    dotColor: "bg-blue-400",
+    statusBg: "bg-blue-100",
+    statusText: "text-blue-800",
+    animationDelay: "animate-[slideInRight_0.5s_ease-in-out_0.6s_both]",
+  },
+];
+
 function TaskDashboardAnimation() {
   return (
     <div className="relative w-full max-w-[500px] aspect-square">
@@ -19,36 +55,23 @@ function TaskDashboardAnimation() {
         </div>
 
         {/* Task `list */}
-        <div className="space-y-3">
-          <div className="flex items-center justify-between p-2 bg-violet-50 rounded-md border border-violet-100 animate-[slideInRight_0.5s_ease-in-out_0.2s_both]">
-            <div className="flex items-center space-x-2">
-              <div className="w-4 h-4 rounded-full bg-yellow-400" />
-              <span className="text-sm font-medium">Design homepage</span>
+        <div className="space-y-2">
+          {tasks.map((task) => (
+            <div
+              key={task.index}
+              className={`flex items-center justify-between p-2 bg-violet-50 rounded-md border border-violet-100 ${task.animationDelay}`}
+            >
+              <div className="flex items-center space-x-2">
+                <div className={`w-4 h-4 rounded-full ${task.dotColor}`} />
+                <span className="text-sm font-medium">{task.label}</span>
+              </div>
+              <span
+                className={`text-xs ${task.statusBg} ${task.statusText} px-2 py-1 rounded-full`}
+              >
+                {task.status}
+              </span>
             </div>
-            <span className="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full">
-              In Progress
-            </span>
-          </div>
-
-          <div className="flex items-center justify-between p-2 bg-violet-50 rounded-md border border-violet-100 animate-[slideInRight_0.5s_ease-in-out_0.4s_both]">
-            <div className="flex items-center space-x-2">
-              <div className="w-4 h-4 rounded-full bg-green-400" />
-              <span className="text-sm font-medium">Research competitors</span>
-            </div>
-            <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full">
-              Completed
-            </span>
-          </div>
-
-          <div className="flex items-center justify-between p-2 bg-violet-50 rounded-md border border-violet-100 animate-[slideInRight_0.5s_ease-in-out_0.6s_both]">
-            <div className="flex items-center space-x-2">
-              <div className="w-4 h-4 rounded-full bg-blue-400" />
-              <span className="text-sm font-medium">Create wireframes</span>
-            </div>
-            <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full">
-              To Do
-            </span>
-          </div>
+          ))}
         </div>
 
         {/* Progress bar */}
@@ -82,16 +105,16 @@ function TaskDashboardAnimation() {
           <Users className="h-4 w-4 text-green-500" />
           <span className="text-xs font-semibold">Team</span>
         </div>
+
         <div className="flex space-x-1">
-          <div className="w-6 h-6 rounded-full bg-violet-200 flex items-center justify-center text-[10px] font-bold">
-            JD
-          </div>
-          <div className="w-6 h-6 rounded-full bg-blue-200 flex items-center justify-center text-[10px] font-bold">
-            TK
-          </div>
-          <div className="w-6 h-6 rounded-full bg-green-200 flex items-center justify-center text-[10px] font-bold">
-            MR
-          </div>
+          {avatars.map(({ initials, bg }) => (
+            <div
+              key={initials}
+              className={`w-6 h-6 rounded-full ${bg} flex items-center justify-center text-[10px] font-bold`}
+            >
+              {initials}
+            </div>
+          ))}
         </div>
       </div>
     </div>
