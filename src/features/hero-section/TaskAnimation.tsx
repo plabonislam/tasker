@@ -12,9 +12,9 @@ function TaskDashboardAnimation() {
             <span className="font-semibold">Project Dashboard</span>
           </div>
           <div className="flex space-x-1">
-            <div className="w-3 h-3 rounded-full bg-red-400"></div>
-            <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
-            <div className="w-3 h-3 rounded-full bg-green-400"></div>
+            <div className="w-3 h-3 rounded-full bg-red-400" />
+            <div className="w-3 h-3 rounded-full bg-yellow-400" />
+            <div className="w-3 h-3 rounded-full bg-green-400" />
           </div>
         </div>
 
@@ -22,7 +22,7 @@ function TaskDashboardAnimation() {
         <div className="space-y-3">
           <div className="flex items-center justify-between p-2 bg-violet-50 rounded-md border border-violet-100 animate-[slideInRight_0.5s_ease-in-out_0.2s_both]">
             <div className="flex items-center space-x-2">
-              <div className="w-4 h-4 rounded-full bg-yellow-400"></div>
+              <div className="w-4 h-4 rounded-full bg-yellow-400" />
               <span className="text-sm font-medium">Design homepage</span>
             </div>
             <span className="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full">
@@ -32,7 +32,7 @@ function TaskDashboardAnimation() {
 
           <div className="flex items-center justify-between p-2 bg-violet-50 rounded-md border border-violet-100 animate-[slideInRight_0.5s_ease-in-out_0.4s_both]">
             <div className="flex items-center space-x-2">
-              <div className="w-4 h-4 rounded-full bg-green-400"></div>
+              <div className="w-4 h-4 rounded-full bg-green-400" />
               <span className="text-sm font-medium">Research competitors</span>
             </div>
             <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full">
@@ -42,7 +42,7 @@ function TaskDashboardAnimation() {
 
           <div className="flex items-center justify-between p-2 bg-violet-50 rounded-md border border-violet-100 animate-[slideInRight_0.5s_ease-in-out_0.6s_both]">
             <div className="flex items-center space-x-2">
-              <div className="w-4 h-4 rounded-full bg-blue-400"></div>
+              <div className="w-4 h-4 rounded-full bg-blue-400" />
               <span className="text-sm font-medium">Create wireframes</span>
             </div>
             <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full">
@@ -61,7 +61,7 @@ function TaskDashboardAnimation() {
             <div
               className="bg-primary h-2 rounded-full animate-[progressBar_2s_ease-out_forwards]"
               style={{ width: "65%" }}
-            ></div>
+            />
           </div>
         </div>
       </div>
@@ -72,8 +72,8 @@ function TaskDashboardAnimation() {
           <ListTodo className="h-4 w-4 text-primary" />
           <span className="text-xs font-semibold">New Task</span>
         </div>
-        <div className="w-full h-2 bg-gray-100 rounded-full mb-2"></div>
-        <div className="w-3/4 h-2 bg-gray-100 rounded-full"></div>
+        <div className="w-full h-2 bg-gray-100 rounded-full mb-2" />
+        <div className="w-3/4 h-2 bg-gray-100 rounded-full" />
       </div>
 
       {/* Floating task card 2 */}
