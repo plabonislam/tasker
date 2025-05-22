@@ -1,5 +1,5 @@
+import Layout from "@/app/Layout";
 import HeroSection from "@/features/hero-section/HeroSection";
-import Layout from "@/app/layout";
 function HomePage() {
   return (
     <Layout>
