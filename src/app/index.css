@@ -110,10 +110,6 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
-
-
-
-  
 /* Utilities Layer */
 @layer utilities {
   * {
@@ -139,5 +135,35 @@
     .container {
       max-width: 1400px;
     }
+  }
+
+  /* existing utilities... */
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(-38px);
+    }
+    50% {
+      transform: translateY(-22px);
+    }
+  }
+
+  @keyframes parallax {
+    0%,
+    100% {
+      transform: translateX(1);
+    }
+    50% {
+      transform: translateX(65px);
+    }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-parallax {
+    animation: parallax 6s ease-in-out infinite;
   }
 }
