@@ -1,14 +1,7 @@
-import Footer from "./features/Footer";
-import Navbar from "./features/Navbar";
-import HeroContent from "./features/hero-section/HeroContent";
+import React from "react";
+import HomePage from "@/pages/HomePage";
 function App() {
-  return (
-    <div className="flex min-h-screen flex-col">
-      <Navbar />
-      <HeroContent />
-      <Footer />
-    </div>
-  );
+  return <HomePage />;
 }
 
 export default App;
