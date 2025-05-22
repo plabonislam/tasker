@@ -1,14 +1,10 @@
-import React from 'react';
-import Layout from "@/layout/layout";
 import HeroSection from "@/features/hero-section/HeroSection";
+import Layout from "@/layout/layout";
 function HomePage() {
-    return (
-        <Layout>
-            <HeroSection />
-        </Layout>
-    )
+  return (
+    <Layout>
+      <HeroSection />
+    </Layout>
+  );
 }
 export default HomePage;
-
-
-
