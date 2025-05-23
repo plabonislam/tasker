@@ -2,19 +2,24 @@ import { createBrowserRouter } from "react-router-dom";
 
 import HomePage from "@/pages/HomePage";
 import ManageTask from "@/pages/ManageTask";
-// Instead of this:
+import NotFoundPage from "@/pages/NotFoundPage";
+import Layout from "./Layout";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <HomePage />,
+    element: <Layout />,
     children: [
       {
-        path: "dashboard",
+        index: true,
         element: <HomePage />,
       },
       {
         path: "about",
         element: <ManageTask />,
+      },
+      {
+        path: "*",
+        element: <NotFoundPage />,
       },
     ],
   },
