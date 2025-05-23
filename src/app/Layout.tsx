@@ -1,11 +1,13 @@
 import Footer from "@/features/Footer";
 import Navbar from "@/features/Navbar";
-import type React from "react";
-function Layout({ children }: { children: React.ReactNode }) {
+import { Outlet } from "react-router-dom";
+function Layout() {
   return (
     <div className="flex min-h-screen flex-col">
       <Navbar />
-      {children}
+
+      <Outlet />
+
       <Footer />
     </div>
   );
