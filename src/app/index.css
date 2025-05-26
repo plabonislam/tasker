@@ -195,7 +195,7 @@
     }
   }
 
-    @keyframes slideInLeft {
+  @keyframes slideInLeft {
     0% {
       transform: translateX(-100%);
       opacity: 0;
