@@ -35,7 +35,8 @@ const tasks = [
   },
 ];
 
-const pogressBarAnimationDealy = "animate-[slideInRight_.5s_ease-in-out_0.7s_both]"
+const pogressBarAnimationDealy =
+  "animate-[slideInRight_.5s_ease-in-out_0.7s_both]";
 function TaskDashboardAnimation() {
   return (
     <div className="relative w-full max-w-[500px] aspect-square">
@@ -81,9 +82,9 @@ function TaskDashboardAnimation() {
             <span>Project Progress</span>
             <span>65%</span>
           </div>
-          <div className="w-full bg-gray-200 rounded-full h-2" >
+          <div className="w-full bg-gray-200 rounded-full h-2">
             <div
-              className="bg-primary h-2 rounded-full animate-[progressBar_2s_ease-out_1s_both]"
+              className="bg-primary h-2 rounded-full animate-[progressBar_.4s_ease-out_1s_both]"
               style={{ width: "65%" }}
             />
           </div>
