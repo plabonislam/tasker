@@ -13,7 +13,7 @@ const tasks = [
     dotColor: "bg-yellow-400",
     statusBg: "bg-yellow-100",
     statusText: "text-yellow-800",
-    animationDelay: "animate-[slideInRight_0.5s_ease-in-out_0.2s_both]",
+    animationDelay: "animate-[slideInTop_0.5s_ease-in-out_0.2s_both]",
   },
   {
     index: 2,
@@ -22,7 +22,7 @@ const tasks = [
     dotColor: "bg-green-400",
     statusBg: "bg-green-100",
     statusText: "text-green-800",
-    animationDelay: "animate-[slideInRight_0.5s_ease-in-out_0.4s_both]",
+    animationDelay: "animate-[slideInTop_0.5s_ease-in-out_0.4s_both]",
   },
   {
     index: 3,
@@ -31,12 +31,12 @@ const tasks = [
     dotColor: "bg-blue-400",
     statusBg: "bg-blue-100",
     statusText: "text-blue-800",
-    animationDelay: "animate-[slideInRight_.5s_ease-in-out_0.6s_both]",
+    animationDelay: "animate-[slideInTop_.5s_ease-in-out_0.6s_both]",
   },
 ];
 
 const pogressBarAnimationDealy =
-  "animate-[slideInRight_.5s_ease-in-out_0.7s_both]";
+  "animate-[slideInTop_.5s_ease-in-out_0.7s_both]";
 function TaskDashboardAnimation() {
   return (
     <div className="relative w-full max-w-[500px] aspect-square">
