@@ -159,11 +159,66 @@
     }
   }
 
+   @keyframes floatFadeIn {
+    0% {
+      transform: translateY(-38px);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(-22px);
+      opacity: .5;
+    }100% {
+      transform: translateY(-38px);
+      opacity: 1;
+    }
+  }
+  
+   @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+   @keyframes slideInRight {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+   @keyframes progressBar {
+    0% {
+      width: 0%;
+      opacity: 0;
+    }
+   100% {
+      width: 65%;
+       opacity: 1;
+    }
+  }
+  .animate-fadeIn {
+    animation: fadeIn 6.5s ease-in-out infinite;
+  }
+ 
   .animate-float {
-    animation: float 6s ease-in-out infinite;
+    animation: float 6.5s ease-in-out infinite;
   }
 
   .animate-parallax {
-    animation: parallax 6s ease-in-out infinite;
+    animation: parallax 6.5s ease-in-out infinite;
+  }
+
+  
+
+  .animate-slideInFromLeft {
+    animation: slideInFromLeft 0.5s ease-out forwards;
   }
 }

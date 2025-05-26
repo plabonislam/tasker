@@ -31,15 +31,16 @@ const tasks = [
     dotColor: "bg-blue-400",
     statusBg: "bg-blue-100",
     statusText: "text-blue-800",
-    animationDelay: "animate-[slideInRight_0.5s_ease-in-out_0.6s_both]",
+    animationDelay: "animate-[slideInRight_.5s_ease-in-out_0.6s_both]",
   },
 ];
 
+const pogressBarAnimationDealy = "animate-[slideInRight_.5s_ease-in-out_0.7s_both]"
 function TaskDashboardAnimation() {
   return (
     <div className="relative w-full max-w-[500px] aspect-square">
       {/* Main dashboard card */}
-      <div className="absolute inset-0 bg-white rounded-lg shadow-2xl p-4 border border-gray-200 animate-[fadeIn_0.5s_ease-in-out]">
+      <div className="absolute inset-0 bg-white rounded-lg shadow-2xl p-4 border border-gray-200 animate-slideInFromLeft">
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center space-x-2">
             <div className="h-8 w-8 rounded-full bg-primary flex items-center justify-center">
@@ -75,14 +76,14 @@ function TaskDashboardAnimation() {
         </div>
 
         {/* Progress bar */}
-        <div className="mt-6">
-          <div className="flex justify-between text-xs mb-1">
+        <div className={`mt-6 ${pogressBarAnimationDealy}`}>
+          <div className="flex mt-6 justify-between text-xs mb-1">
             <span>Project Progress</span>
             <span>65%</span>
           </div>
-          <div className="w-full bg-gray-200 rounded-full h-2">
+          <div className="w-full bg-gray-200 rounded-full h-2" >
             <div
-              className="bg-primary h-2 rounded-full animate-[progressBar_2s_ease-out_forwards]"
+              className="bg-primary h-2 rounded-full animate-[progressBar_2s_ease-out_1s_both]"
               style={{ width: "65%" }}
             />
           </div>
@@ -90,7 +91,7 @@ function TaskDashboardAnimation() {
       </div>
 
       {/* Floating task card 1 */}
-      <div className="absolute top-[-30px] right-[-20px] bg-white p-3 rounded-lg shadow-lg border border-gray-200 w-[180px] animate-[float_4s_ease-in-out_infinite_alternate] z-10">
+      <div className="absolute top-[-30px] right-[-20px] bg-white p-3 rounded-lg shadow-lg border border-gray-200 w-[180px] animate-[floatFadeIn_3s_ease-in-out_.59s_both] z-10">
         <div className="flex items-center space-x-2 mb-2">
           <ListTodo className="h-4 w-4 text-primary" />
           <span className="text-xs font-semibold">New Task</span>
